@@ -10,16 +10,17 @@
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdf6f0; /* pastel nền */
-    color: #5c4033; /* nâu đậm */
+    background-color: #fdf6f0;
+    color: #5c4033;
   }
   
+  
   header {
-    background-color: #d2b48c; /* nâu pastel */
+    background-color: #d2b48c;
     color: white;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     position: relative;
   }
@@ -29,20 +30,20 @@
     font-size: 1.8rem;
   }
   
-  
-  button {
+  #toggle {
     background: none;
     border: none;
     color: white;
-    font-size: 150%;
+    font-size: 1.8rem;
     cursor: pointer;
     display: none;
   }
   
-  button:focus {
-    color: #fffacd; /* pastel vàng */
+  #toggle:focus {
+    color: #fffacd;
     border: 1px solid #fffacd;
   }
+  
   
   nav {
     display: flex;
@@ -51,18 +52,19 @@
   nav ul {
     display: flex;
     align-items: center;
-    padding: 0;
+    gap: 1.5rem;
     margin: 0;
+    padding: 0;
+    list-style: none;
   }
   
   nav li {
-    list-style-type: none;
-    margin-left: 1rem;
+    margin: 0;
   }
   
   nav a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
     transition: color 0.3s ease;
   }
@@ -71,7 +73,7 @@
     color: #fffacd;
   }
   
-  /* Main content */
+  
   main {
     padding: 1rem;
     background-color: white;
@@ -80,7 +82,7 @@
     box-shadow: 0 4px 10px rgba(92, 64, 51, 0.1);
   }
   
-  /* Cards (bổ sung nếu bạn dùng card section) */
+  
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -103,53 +105,7 @@
     border-radius: 6px;
   }
   
-  /* Video section */
-  .video {
-    margin: 2rem 0;
-    text-align: center;
-    background-color: #fcebd2;
-    padding: 2rem;
-    border-radius: 12px;
-  }
   
-  /* Footer */
-  footer {
-    background-color: #d2b48c;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-  
-  /* Responsive - Mobile view */
-  @media screen and (max-width: 570px) {
-    button {
-      display: block;
-    }
-  
-    nav {
-      display: none;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: 100%;
-      background-color: #d2b48c;
-    }
-  
-    nav.active {
-      display: block;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1rem;
-    }
-  
-    nav li {
-      margin: 0.5rem 0;
-    }
-  }
   .video {
     text-align: center;
     background-color: #fcebd2;
@@ -171,32 +127,17 @@
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(92, 64, 51, 0.15);
   }
-  /* Nút 3 gạch (hamburger) - hiện khi mobile */
-#toggle {
-    background: none;
-    border: none;
+  
+  
+  footer {
+    background-color: #d2b48c;
     color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    display: none;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
   }
   
-  /* Nav mặc định */
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
   
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Responsive cho màn hình nhỏ */
   @media (max-width: 768px) {
     #toggle {
       display: block;
@@ -217,6 +158,7 @@
   
     nav ul {
       flex-direction: column;
+      align-items: flex-start;
       padding: 1rem;
     }
   
@@ -224,5 +166,6 @@
       margin: 0.5rem 0;
     }
   }
+  
   
   
