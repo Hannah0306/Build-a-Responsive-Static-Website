@@ -166,6 +166,58 @@
       margin: 0.5rem 0;
     }
   }
+  .hero {
+    background-image: url("background.jpg"); /* thay bằng ảnh thật của bạn */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6rem 1rem;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(92, 64, 51, 0.4); /* overlay nâu nhẹ */
+    z-index: 1;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-button {
+    background-color: #fffacd;
+    color: #5c4033;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #ffe7a3;
+  }
+  
   
   
   
