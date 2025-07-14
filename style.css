@@ -167,7 +167,7 @@
     }
   }
   .hero {
-    background-image: url("background.jpg"); /* thay bằng ảnh thật của bạn */
+    background-image: url("background.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,8 +181,7 @@
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(92, 64, 51, 0.4); /* overlay nâu nhẹ */
-    z-index: 1;
+    background-color: rgba(92, 64, 51, 0.4); 
     border-radius: 0 0 20px 20px;
   }
   
